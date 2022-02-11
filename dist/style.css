@@ -1,0 +1,441 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: box-border;
+}
+
+.main-background {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/545/939/non_2x/cartoon-cute-summer-cat-swimming-seamless-pattern-vector.jpg") 
+}
+
+.logo-div {
+  position: relative;
+  left: 0px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 0px;
+}
+
+.header-div {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 10px double black;
+  border-radius: 2%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .header-div {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+#header-image {
+  position: relative;
+  width: 50px;
+  margin: 0px 0px 0px 0px;
+}
+
+h1 {
+  -webkit-text-stroke: 1px #000000;
+  color: pink;
+  text-shadow: 
+    2px 2px 0 #000,
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+  transform: scaleX(0.9) scaleY(0.9);
+  position: relative;
+  font-family: 'Fredoka One', cursive;
+  margin: 0px 0px 0px 0px;
+  padding: 8px 0px 0px 3px;
+  white-space: nowrap;
+  animation-name: pulse-text;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-text {
+  50% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  white-space: nowrap;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  ul {
+    flex-direction: column;
+  }
+}
+
+nav > ul > li {
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  margin: 7px 30px;
+}
+
+li a {
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  
+}
+
+li a:hover {
+  color: hotpink;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px black;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 80%;
+  min-height: 400px;
+  height: auto;
+  border: 10px double black;
+  border-radius: 2px;
+  
+}
+
+.features-tab {
+  position: relative;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px;
+  padding: 20px;
+}
+
+.features-tab:hover .features-icons {
+  transform: scaleX(1.2) scaleY(1.2);
+}
+
+.features-tab:hover h3 {
+  color: hotpink;
+}
+
+.features-icons {
+  position: relative;
+  margin: 3px 0px 0px 0px;
+  width: 35px;
+}
+
+.features-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 0px 0px 10px;
+}
+
+h3 {
+  position: relative;
+  margin: 0px 0px 0px -10px;
+  -webkit-text-stroke: 1px #000000;
+  color: pink;
+  text-shadow: 
+    2px 2px 0 #000,
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+  transform: scaleX(0.9) scaleY(0.9);
+  font-family: 'Fredoka One', cursive;
+  white-space: nowrap;
+}
+
+@media (max-width: 450px) {
+  .features-tab {
+    transform: scaleX(0.9) scaleY(0.9);
+  }
+}
+
+p {
+  -webkit-text-stroke: 0px #000000;
+  font-weight: 200px;
+  text-align: left;
+  font-family: 'Fredoka One', cursive;
+}
+
+#video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#video-container > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+iframe {
+  border: 10px double black;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  font-family: 'Fredoka One', cursive;
+}
+
+@media (max-width: 800px) {
+  #form-container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  #form-container {
+    margin-top: 210px
+  }
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  white-space: nowrap;
+  text-shadow: 3px 3px 2px white;
+}
+
+.form-inputs {
+  margin: 15px 0px 0px 0px;
+}
+
+.input-box {
+  border: 5px double black;
+  padding: 5px;
+  width: 25em;
+  border-radius: 2%;
+  font-family: 'Fredoka One', cursive;
+  box-shadow: 3px 3px 2px gray
+}
+
+.button {
+  background: pink;
+  border: 5px black solid;
+  border-radius: 2px;
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#form input[type="submit"]:hover {
+  box-shadow: 3px 3px 3px gray;
+  background-color: hotpink;
+  transform: scaleX(1.05) scaleY(1.05);
+  transition: background-color transform box-shadow 0.3s;
+}
+
+@media (max-width: 450px) {
+  h2 {
+    transform: scaleX(0.8) scaleY(0.8);
+  }
+}
+
+#pricing {
+  margin: 60px 30px 60px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 950px) {
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 10px double #000000;
+  border-radius: 2px;
+  background: white;
+}
+
+.product:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  box-shadow: 3px 3px 0px gray;
+}
+
+@media (max-width: 950px) {
+  .product {
+    width: 50%;
+  }
+}
+
+.product > .package {
+  background-color: hotpink;
+  color: #000000;
+  padding: 15px 0px;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 2px 2px 0px white;
+  text-decoration: underline;
+}
+
+.product > h4 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 30px;
+  color: hotpink;
+  text-shadow: 
+    2px 2px 0 #000,
+     -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+       0.5px 0.5px 0 #000;
+  margin: 20px 10px 0px 10px;
+  animation-name: text-pulse;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-pulse {
+  50% {
+    transform: scaleX(1.1) scaleY(1.1) skewX(-10deg);
+  }
+}
+
+.product > ul {
+  margin: 10px 0px;
+  display: block;
+}
+
+.product > ul > li {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+
+.product > .button-two {
+  position: relative;
+  border: 0;
+  margin: 20px;
+  padding: 20px;
+  background-color: pink;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 900;
+  font-style: bold;
+  border-radius: 5%;
+  font-size: 20px;
+}
+
+.product > .button-two:hover {
+  background-color: deeppink;
+  transition: background-color border box-shadow 0.7s;
+  box-shadow: 3px 3px 0px gray;
+  border: 2px double black;
+  margin-bottom: 16px;
+}
+
+footer {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 0;
+  background-color: deeppink;
+  padding: 20px;
+  height: auto;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+
+footer > ul {
+  margin-top: -20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+@media (max-width: 500px) {
+  footer > ul {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer > ul {
+    margin-top: -40px;
+  }
+}
+
+footer > ul > li {
+  margin: 0px 9px;
+  font-family: 'Fredoka One', cursive;
+}
+
+footer > .span-text {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 900;
+  color: black;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #444;
+}
