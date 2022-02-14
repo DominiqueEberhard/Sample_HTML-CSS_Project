@@ -1,5 +1,1 @@
-# Rent-A-Cat Landing Page (freeCodeCamp Exercise)
-
-A Pen created on CodePen.io. Original URL: [https://codepen.io/DominiqueEberhard/pen/xxgmOBe](https://codepen.io/DominiqueEberhard/pen/xxgmOBe).
-
-
+This is a fun mock landing page centered around cats. Everything written on the page is *not* intended to be taken seriously. This does not reflect my view on cats. I love cats. This was made using CodePen.io's wonderful virtual workspace.
